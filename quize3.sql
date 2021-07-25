@@ -1,14 +1,14 @@
-/*CREATE TABLE usuario (
+CREATE TABLE usuario (
     userid character varying(40)  NOT NULL,
     nombre character varying(40) NOT NULL,
     password character varying(40) NOT NULL
-) WITH (oids = false);
+);
 CREATE TABLE auditoria (
  usuario character varying(40)  NOT NULL,
 	IP  character varying(20)  NOT NULL,
 	fechalog  DATE  default NULL,
 	horalog   timestamp default NULL
-);*/
+);
 CREATE OR REPLACE FUNCTION random_date()
 RETURNS timestamp
 LANGUAGE PLPGSQL
